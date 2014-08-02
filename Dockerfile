@@ -1,4 +1,5 @@
 FROM phusion/baseimage
+MAINTAINER Stafford Brunk <stafford.brunk@gmail.com>
 
 RUN locale-gen --no-purge en_US.UTF-8
 ENV LANG en_US.UTF-8
