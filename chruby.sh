@@ -1,4 +1,4 @@
 if [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ]; then
   source /usr/local/share/chruby/chruby.sh
-  source /usr/local/chruby/share/chruby/auto.sh
+  source /usr/local/share/chruby/chruby/auto.sh
 fi
