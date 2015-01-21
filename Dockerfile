@@ -26,16 +26,16 @@ RUN apt-get install -y xvfb phantomjs
 RUN apt-get install -y nodejs
 RUN apt-get install -y wget
 WORKDIR /opt
-RUN wget -O ruby-install-0.4.3.tar.gz https://github.com/postmodern/ruby-install/archive/v0.4.3.tar.gz
-RUN tar -xzvf ruby-install-0.4.3.tar.gz && rm ruby-install-0.4.3.tar.gz
-RUN wget -O chruby-0.3.8.tar.gz https://github.com/postmodern/chruby/archive/v0.3.8.tar.gz
-RUN tar -xzvf chruby-0.3.8.tar.gz && rm chruby-0.3.8.tar.gz
-WORKDIR /opt/ruby-install-0.4.3
+RUN wget -O ruby-install-0.5.0.tar.gz https://github.com/postmodern/ruby-install/archive/v0.5.0.tar.gz
+RUN tar -xzvf ruby-install-0.5.0.tar.gz && rm ruby-install-0.5.0.tar.gz
+RUN wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
+RUN tar -xzvf chruby-0.3.9.tar.gz && rm chruby-0.3.9.tar.gz
+WORKDIR /opt/ruby-install-0.5.0
 RUN make install
-WORKDIR /opt/chruby-0.3.8
+WORKDIR /opt/chruby-0.3.9
 RUN make install
 WORKDIR /opt
-RUN rm -rf ruby-install-0.4.3 chruby-0.3.8
+RUN rm -rf ruby-install-0.5.0 chruby-0.3.9
 WORKDIR /
 ADD chruby.sh /etc/profile.d/
-RUN ruby-install ruby 2.1.2
+RUN ruby-install ruby 2.1.5
