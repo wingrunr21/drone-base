@@ -38,4 +38,4 @@ WORKDIR /opt
 RUN rm -rf ruby-install-0.5.0 chruby-0.3.9
 WORKDIR /
 ADD chruby.sh /etc/profile.d/
-RUN ruby-install ruby 2.1.5
+RUN ruby-install ruby 2.2.2

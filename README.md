@@ -9,4 +9,4 @@ It currently installs the following:
 * xvfb and phantomjs
 * nodejs
 * ruby-install and chruby
-* Ruby 2.1.5
+* Ruby 2.2.2
