@@ -1,5 +1,8 @@
 # Changelog
 
+### v1.2.1
+* Add `chruby.sh` to `/etc/drone.d`
+
 ### v1.2.0
 * Upgrade ruby to v2.2.2
 
