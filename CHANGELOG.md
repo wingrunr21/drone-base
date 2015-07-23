@@ -1,5 +1,8 @@
 # Changelog
 
+### v1.2.2
+* Make `chruby.sh` executable
+
 ### v1.2.1
 * Add `chruby.sh` to `/etc/drone.d`
 
